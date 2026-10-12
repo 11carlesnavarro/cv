@@ -1,4 +1,4 @@
-\documentclass[11pt, a4paper]{moderncv}
+\documentclass[10pt, a4paper]{moderncv}
 
 % ModernCV themes
 \moderncvstyle{classic}
@@ -8,68 +8,66 @@
 \usepackage[utf8]{inputenc}
 
 % Adjust page margins
-\usepackage[scale=0.85]{geometry}
+\usepackage[scale=0.9]{geometry}
+\setlength{\hintscolumnwidth}{2.7cm}
 
 % Personal data
 \name{Carles}{Navarro}
-\title{Machine Learning Researcher}
+\title{AI Scientist}
 \address{L'Ampolla, Catalonia, Spain}{}
 \phone[mobile]{+34634566574}
 \email{11carlesnavarro@gmail.com}
 \social[linkedin]{carles-navarro-486691173}
-%\photo[64pt][0.4pt]{picture}
+\social[github]{11carlesnavarro}
+\social[googlescholar][https://scholar.google.com/citations?user=FQ2MvwIAAAAJ]{Google Scholar}
 
 \begin{document}
 \makecvtitle
+\vspace{-1.5em}
+
+\cvitem{}{I am an AI scientist who works on machine learning for drug discovery. My research started with geometric deep learning, generative chemistry and reinforcement learning. Now I use this experience to build multi-agent LLM systems that plan, run and evaluate scientific experiments. In all my work, I take ideas from research to production with simple design and rigorous evaluation.}
 
 \section{Experience}
-\cventry{Sep 2022--Present}{Machine Learning Researcher -- Industrial PhD}{Acellera}{Barcelona, Spain}{}{%
+\cventry{2025--Present}{AI Scientist}{Acellera Labs}{Barcelona}{}{%
 \begin{itemize}
-    \item Scaling up generative models for drug discovery and design.
-    \item Created and trained multimodal Neural Network architectures for molecular generation.
-    \item Optimized molecular generation models with reinforcement learning, developing specialized learning methods to align the generated molecules to purchasable chemical spaces.
+    \item Lead the development of PlayMolecule AI from research prototype to production, serving 2,000+ users and enterprise deployments in the pharmaceutical industry.
+    \item Built a production multi-agent architecture for scientific discovery, with secure code execution and computational chemistry workloads on remote HPC clusters.
+    \item Designed scientific evaluations and observability for AI agents, with containerized benchmarks from real research tasks, automated and expert grading, and iterative optimization.
+    \item Shape the technical strategy and product roadmap with company leadership.
 \end{itemize}}
 
-\cventry{Oct 2021--Sep 2022}{MSc Researcher in Machine Learning for Molecular Simulations}{Universitat Pompeu Fabra}{Barcelona, Spain}{}{%
+\cventry{2022--2025}{Machine Learning Researcher, Industrial PhD}{Acellera Labs}{Barcelona}{}{%
 \begin{itemize}
-    \item Researched coarse-grained differentiable molecular simulations.
-    \item Developed methodologies for training graph neural networks in protein folding using experimental data.
-    \item Published work in the \textit{Journal of Chemical Theory and Computation}.
+    \item Designed 3D deep learning models for protein-ligand virtual screening and billion-scale molecular search.
+    \item Trained chemical language models for molecular design, optimized with reinforcement learning.
+    \item Applied reinforcement learning to train LLMs for reasoning on chemistry tasks.
 \end{itemize}}
 
-\cventry{Jul 2021--Nov 2021}{Summer Intern -- Computational Science Lab}{Universitat Pompeu Fabra}{Barcelona, Spain}{}{%
+\cventry{2021--2022}{MSc Researcher, Computational Science Laboratory}{Universitat Pompeu Fabra}{Barcelona}{}{%
 \begin{itemize}
-    \item Worked on protein folding using graph neural networks trained on experimental data.
-    \item With Prof. Gianni De Fabritiis at the Computational Science Laboratory.
+    \item Created graph neural network force fields for proteins, trained with differentiable molecular dynamics.
 \end{itemize}}
 
 \section{Education}
-\cventry{2020--2022}{Master of Science in Bioinformatics for the Health Sciences}{Universitat Pompeu Fabra}{Barcelona, Spain}{}{}
-
-\cventry{2019--Present}{Bachelor of Science in Physics}{Universidad Nacional de Educación a Distancia (U.N.E.D.)}{Spain}{(Completed 102 of 240 ECTS)}{%
-\begin{itemize}
-    \item For the sake of learning.
-\end{itemize}}
-
-\cventry{2015--2019}{Bachelor of Science in Chemistry}{Universitat Rovira i Virgili}{Tarragona, Spain}{}{}
+\cventry{2022--2026}{PhD in Biomedicine, Industrial Doctorate}{Universitat Pompeu Fabra}{Barcelona}{}{Thesis: \textit{Agentic Intelligence for Molecular Modelling and Drug Discovery}. Supervisor: Prof. Gianni De Fabritiis.}
+\cventry{2020--2022}{MSc in Bioinformatics for Health Sciences}{Universitat Pompeu Fabra}{Barcelona}{}{}
+\cventry{2015--2019}{BSc in Chemistry}{Universitat Rovira i Virgili}{Tarragona}{}{}
+\cventry{2019--Present}{BSc in Physics, part time}{UNED}{Spain}{}{}
 
 \section{Skills}
-\cvitem{Programming}{Python, C}
-\cvitem{Machine Learning}{Pytorch, Large Language Models, Diffusion Models, Reinforcement Learning}
-\cvitem{Tools}{Git, LaTeX, MATLAB, Linux}
-\cvitem{Languages}{Catalan (Native), Spanish (Native), English (Fluent)}
+\cvitem{AI and ML}{LLM agents, multi-agent systems, agent evaluation, reinforcement learning, generative models, geometric deep learning, contrastive learning}
+\cvitem{LLM stack}{OpenAI, Anthropic and Gemini APIs, vLLM, Hugging Face Transformers, TRL, LoRA, MCP, Harbor}
+\cvitem{Programming}{Python, TypeScript, SQL, C}
+\cvitem{Frameworks}{PyTorch, PyTorch Geometric, TorchRL, FastAPI, React}
+\cvitem{Infrastructure}{Linux, Docker, SLURM, GPU clusters, CI/CD}
+\cvitem{Languages}{Catalan (native), Spanish (native), English (fluent)}
 
 \section{Publications}
-\cvitem{}{%
-\begin{enumerate}\itemsep1pt \parskip0pt \parsep0pt
-    \item N. Schapin, \textbf{C. Navarro}, A. Bou, G. De Fabritiis (2024). On Machine Learning Approaches for Protein-Ligand Binding Affinity Prediction. \textit{arXiv:2407.19073}.
-    \item A. Bou, M. Thomas, S. Dittert, \textbf{C. Navarro}, M. Majewski, Y. Wang, S. Patel, G. Tresadern, M. Ahmad, V. Moens, W. Sherman, S. Sciabola, G. De Fabritiis (2024). ACEGEN: Reinforcement Learning of Generative Chemical Agents for Drug Discovery. \textit{Journal of Chemical Information and Modeling}.
-    \item \textbf{C. Navarro}, M. Majewski, G. De Fabritiis (2023). Top-Down Machine Learning of Coarse-Grained Protein Force Fields. \textit{Journal of Chemical Theory and Computation}.
-\end{enumerate}
-}
-
-\section{Interests}
-\cvitem{}{Artificial Intelligence, Computational Chemistry, Software Development, Physics}
+\cvitem{2026}{\textbf{C. Navarro}, M. Torrens-Fontanals, P. Thölke, S. Doerr, G. De Fabritiis. Speak to a Protein: An Interactive Multimodal Co-Scientist for Protein Analysis. \textit{J. Chem. Inf. Model.}}
+\cvitem{2026}{M. C. Thomas, R. Astudillo, Y. S. Raouf, \textbf{C. Navarro}, G. De Fabritiis, A. Bender. Generative Virtual Screening: From Search to Generate and Back. \textit{Digital Discovery}.}
+\cvitem{2026}{\textbf{C. Navarro}, P. Thölke, G. De Fabritiis. Structure-Guided Molecular Design with Contrastive 3D Protein-Ligand Learning. \textit{arXiv:2604.19562}.}
+\cvitem{2024}{N. Schapin, \textbf{C. Navarro}, A. Bou, G. De Fabritiis. On Machine Learning Approaches for Protein-Ligand Binding Affinity Prediction. \textit{arXiv:2407.19073}.}
+\cvitem{2024}{A. Bou, M. Thomas, S. Dittert, \textbf{C. Navarro}, et al., G. De Fabritiis. ACEGEN: Reinforcement Learning of Generative Chemical Agents for Drug Discovery. \textit{J. Chem. Inf. Model.}}
+\cvitem{2023}{\textbf{C. Navarro}, M. Majewski, G. De Fabritiis. Top-Down Machine Learning of Coarse-Grained Protein Force Fields. \textit{J. Chem. Theory Comput.}}
 
 \end{document}
-
