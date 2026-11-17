@@ -8,7 +8,7 @@
 \usepackage[utf8]{inputenc}
 
 % Adjust page margins
-\usepackage[scale=0.9]{geometry}
+\usepackage[hscale=0.9,vscale=0.95]{geometry}
 \setlength{\hintscolumnwidth}{2.7cm}
 
 % Personal data
@@ -25,41 +25,44 @@
 \makecvtitle
 \vspace{-1.5em}
 
-\cvitem{}{AI Scientist with a background in machine learning research and engineering for molecular discovery and design. Experience developing 3D protein–ligand models, generative models, reinforcement learning methods, and LLMs for drug discovery. Currently leading the development of PlayMolecule AI, combining autonomous scientific agents, evaluation frameworks, and production ML infrastructure.}
+\cvitem{}{AI Scientist with a background in machine learning research and engineering for molecular discovery and design. Experience with reinforcement learning, 3D protein–ligand models, LLM post-training, and agent engineering and evaluation. Currently leading the development of PlayMolecule AI, a platform for autonomous scientific research in drug discovery.}
 
 \section{Experience}
 \cventry{2025--Present}{AI Scientist}{Acellera Labs}{Barcelona}{}{%
 \begin{itemize}
     \item Lead the development of PlayMolecule AI from research prototype to production, serving 2,000+ users and enterprise deployments in the pharmaceutical industry.
-    \item Built a production multi-agent architecture for scientific discovery, with secure code execution and computational chemistry workloads on remote HPC clusters.
-    \item Designed scientific evaluations and observability for AI agents, with containerized benchmarks from real research tasks, automated and expert grading, and iterative optimization.
+    \item Designed and built a multi-agent harness for long-horizon scientific research, with persistent agents and asynchronous execution of computational chemistry workflows on HPC clusters.
+    \item Built scientific agent benchmarks from real research tasks, combining automated checks, LLM judges, and expert grading.
+    \item Built observability tools to inspect multi-agent traces and diagnose failures in production.
     \item Shape the technical strategy and product roadmap with company leadership.
 \end{itemize}}
 
 \cventry{2022--2025}{Machine Learning Researcher, Industrial PhD}{Acellera Labs}{Barcelona}{}{%
 \begin{itemize}
-    \item Developed contrastive 3D protein–ligand models for structure-based virtual screening and billion-scale molecular search.
-    \item Trained chemical language models for molecular design, optimized with reinforcement learning.
-    \item Applied reinforcement learning to train LLMs for reasoning on chemistry tasks.
+    \item Designed and trained geometric deep learning architectures for
+  contrastive 3D protein–ligand learning and billion-scale virtual screening.
+    \item Pretrained chemical language models for molecular generation and
+  applied reinforcement learning for molecular property optimization.
+    \item Implemented LoRA-based policy-gradient training and checkpoint evaluation for chemistry reasoning in open-weight LLMs.
 \end{itemize}}
 
 \cventry{2021--2022}{MSc Researcher, Computational Science Laboratory}{Universitat Pompeu Fabra}{Barcelona}{}{%
 \begin{itemize}
-    \item Created graph neural network force fields for proteins, trained with differentiable molecular dynamics.
+    \item Developed coarse-grained protein force fields using graph neural networks and differentiable molecular dynamics.
 \end{itemize}}
 
 \section{Education}
 \cventry{2022--2026}{PhD in Biomedicine, Industrial Doctorate}{Universitat Pompeu Fabra}{Barcelona}{}{Thesis: \textit{Agentic Intelligence for Molecular Modelling and Drug Discovery}. Supervisor: Prof. Gianni De Fabritiis.}
 \cventry{2020--2022}{MSc in Bioinformatics for Health Sciences}{Universitat Pompeu Fabra}{Barcelona}{}{}
 \cventry{2015--2019}{BSc in Chemistry}{Universitat Rovira i Virgili}{Tarragona}{}{}
-\cventry{2019--Present}{BSc in Physics, part time}{UNED}{Spain}{}{}
+\cventry{2019--}{BSc in Physics, part time}{UNED}{Spain}{}{}
 
 \section{Skills}
-\cvitem{AI and ML}{LLM agents, multi-agent systems, agent evaluation, reinforcement learning, generative models, geometric deep learning, contrastive learning}
-\cvitem{LLM stack}{OpenAI, Anthropic and Gemini APIs, vLLM, Hugging Face Transformers, TRL, LoRA, MCP, Harbor}
-\cvitem{Programming}{Python, TypeScript, SQL, C}
-\cvitem{Frameworks}{PyTorch, PyTorch Geometric, TorchRL, FastAPI, React}
-\cvitem{Infrastructure}{Linux, Docker, SLURM, GPU clusters, CI/CD}
+\cvitem{AI and ML}{Reinforcement learning, LLM post-training, multi-agent systems, agent evaluation, generative models, geometric deep learning, contrastive learning}
+\cvitem{LLM stack}{Hugging Face Transformers, TRL, LoRA, vLLM, MCP, Harbor}
+\cvitem{Programming}{Python, SQL, C}
+\cvitem{Frameworks}{PyTorch, PyTorch Geometric, TorchRL, FastAPI}
+\cvitem{Infrastructure}{Linux, Docker, SLURM, HPC clusters, CI/CD}
 \cvitem{Languages}{Catalan (native), Spanish (native), English (fluent)}
 
 \section{Publications}
